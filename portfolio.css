@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: aqua;
-}
-
 nav {
     width: 100%;
     background-color: darkgray;
@@ -23,6 +19,7 @@ nav {
     left: 0;
     top: 5em;
     transform: scale(1.1);
+    z-index: 10;
 }
 
 #side-menu i {
@@ -54,15 +51,19 @@ nav {
 
 video {
     margin: 0 auto;
-    transform: translateY(-45%);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #hero-text {
     font-family: 'Indie Flower', cursive;
-    top: 20%;
-    position: relative;
+    position: absolute;
     text-align: center;
     color: aliceblue;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: .5em;
     width: 40%;
