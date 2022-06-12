@@ -111,6 +111,8 @@ ul {
   /* JavaScript pre-rotates these wrappers instead of the hands when getting the time at load. If it pre-rotates the hands, then the hands will not perform 1 turn at their normal speeds. */
   .hr-wrapper, .min-wrapper, .sec-wrapper {
     position: absolute;
+    left: -12px;
+    top: -10px;
     width: 320px;
     height: 320px;
   }

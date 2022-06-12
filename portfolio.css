@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(227, 227, 227) !important;
+}
+
 nav {
     width: 100%;
     background-color: darkgray;
@@ -29,16 +33,18 @@ nav {
 }
 
 #side-menu i:hover:first-child{
-    background-color: lightgrey;
+    background-color: rgb(129, 181, 253);
     border-top-right-radius: 1em;
 }
 
 #side-menu i:hover{
-    background-color: lightgrey;
+    background-color: rgb(129, 181, 253);
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 #side-menu i:hover:last-child{
-    background-color: lightgrey;
+    background-color: rgb(129, 181, 253);
     border-bottom-right-radius: 1em;
 }
 
@@ -46,7 +52,6 @@ nav {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: 0;
 }
 
 video {
