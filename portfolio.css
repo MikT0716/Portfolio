@@ -16,7 +16,7 @@ nav {
 }
 
 #side-menu {
-    background-color: darkgray;
+    background-color: rgba(169, 169, 169, 0.3);
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     position: fixed;
@@ -24,6 +24,7 @@ nav {
     top: 5em;
     transform: scale(1.1);
     z-index: 10;
+    backdrop-filter: blur(2em);
 }
 
 #side-menu i {
@@ -64,17 +65,19 @@ video {
 #hero-text {
     font-family: 'Indie Flower', cursive;
     position: absolute;
-    text-align: center;
     color: aliceblue;
+    text-align: center;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -30%);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: .5em;
-    width: 40%;
+    width: 45%;
+    height: 25vh;
+    line-height: 25vh;
     font-size: 5em;
     margin: 0 auto;
-    padding: .2em;
+    backdrop-filter: blur(.05em);
     z-index: 10;
 }
 
